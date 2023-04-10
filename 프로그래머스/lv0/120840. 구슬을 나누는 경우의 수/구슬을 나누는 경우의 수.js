@@ -1,14 +1,7 @@
 function solution(balls, share) {
-    var answer = 0;
+    var answer = 1;
     let res_ja = 0;
     let res_mo = 0;
-    
-    if(share === 1) {
-        return balls;
-    }
-    if(balls === share){
-        return 1;
-    }
     
     res_ja = ja(balls, share);
     res_mo = ja(share, share);
